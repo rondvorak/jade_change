@@ -1,0 +1,13 @@
+mixin positive(transition)
+  #positive.div.page
+    .well.page-wrapper
+      button.btn-block.btn-primary.btn.large(data-parallax='#{transition}' , data-target='main') Menu
+      .top.container
+        //img.pin-img(src='./images/clock.png')
+      .middle
+        .row-fluid.well
+          h1 Send me positive vibrations about
+          ul#positives
+          input(readonly="true", type="text" , id="inputTime" ,  placeholder="every day at!")
+          btn.btn-danger.btn.not-positive Clear
+      .bottom.well

@@ -1,0 +1,122 @@
+#vision .middle {
+height:80%;
+margin-top:2%;
+}
+
+
+.close-container .dialog-buttons {
+display:none;
+}
+
+.dialog {
+border-radius:8px;
+border-style:solid;
+border-width:1px;
+}
+
+
+/*
+.smoke textarea{
+display:none;
+}
+*/
+
+
+#vision .middle .well{
+/*
+  background-color:rgb(60,60,60);
+*/
+position:relative;
+
+
+    padding-left: 0px;
+    padding-right: 0px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+
+
+}
+
+#vision .top{
+display:none;
+}
+
+#visionstub{
+list-style:none;
+}
+
+#visionstub li {
+  display:inline;
+}
+
+#visionstub img {
+width:100px;
+}
+
+#visionstub img:hover {
+border-style:solid;
+border-color:blue;
+border-width:1px;
+}
+
+#vision 
+
+.point {
+position:absolute;
+/*
+border-style:solid;
+border-width:1px;
+border-color:blue;
+*/
+background-color:black;
+margin:3px;
+}
+
+.point .middle .well {
+position:absolute;
+overflow:none;
+}
+
+.point .middle .well:hover {
+background-color:blue;
+}
+
+
+
+.point img{
+max-width:150px;
+max-height:150px;
+}
+
+.smoke .options {
+background-color:green;
+}
+
+
+.smoke.options img{
+  max-height:150px;
+}
+
+.smoke.options textarea {
+
+height:120px;
+resize:none;
+}
+
+.smoke.options .enter{
+width:160px;
+margin-left:10px;
+}
+
+.smoke.choice .dialog-buttons {
+display:none;
+}
+
+
+.smoke.options .dialog-buttons {
+display:none;
+}

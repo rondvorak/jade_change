@@ -1,0 +1,36 @@
+mixin affirmations(transition)
+  #affirmations.div.page
+    .well.page-wrapper
+      button.btn-block.btn-primary.btn.large(data-parallax='#{transition}' , data-target='main') Menu
+      .top.container
+        img.pin-img(src='./images/logo.gif')
+          //.well.span4.offset4
+      .bottom.well
+        .affirmation_category
+          .wrapper
+            .spo
+              a(href="#" , data-category="Love")
+                img(src="./images/affirmations/Love.png");
+              a(href="#" , data-category="Wealth")
+                img(src="./images/affirmations/Wealth.png");
+              a(href="#", data-category="Health")
+                img(src="./images/affirmations/Health.png");
+              a(href="#", data-category="Now")
+                img(src="./images/affirmations/Now.png");
+              a(href="#", data-category="Healing")
+                img(src="./images/affirmations/Healing.png");
+              a(href="#", data-category="Peace")
+                img(src="./images/affirmations/Peace.png");
+              a(href="#", data-category="Blessings")
+                img(src="./images/affirmations/Blessings.png");
+              a(href="#", data-category="Forgiveness")
+                img(src="./images/affirmations/Forgiveness.png");
+              a(href="#", data-category="Power")
+                img(src="./images/affirmations/Power.png");
+              a(href="#", data-category="Gratitude")
+                img(src="./images/affirmations/Gratitude.png");
+      .middle
+        .row-fluid.well
+          h1.cat Affirmations
+          p.mess 
+

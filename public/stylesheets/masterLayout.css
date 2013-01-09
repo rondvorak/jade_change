@@ -1,0 +1,146 @@
+
+.page{
+width:100%;
+height:100%;
+background-color: rgba(255, 255, 255, 0.0);
+}
+
+.page .well {
+}
+
+
+.well.page-wrapper {
+position:absolute;
+height:90%;
+width:90%;
+top:0;
+bottom:0;
+left:0;
+right:0;
+margin:auto;
+background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+/*
+ *9900cc
+ */
+
+.btn-primary {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #006dcc;
+  *background-color: #d609d6;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#9900cc), to(#d609d6));
+  background-image: -webkit-linear-gradient(top, #9900cc, #d609d6);
+  background-image: -o-linear-gradient(top, #9900cc, #d609d6);
+  background-image: linear-gradient(to bottom, #9900cc, #d609d6);
+  background-image: -moz-linear-gradient(top, #9900cc, #d609d6);
+  background-repeat: repeat-x;
+  border-color: #d609d6 #d609d6 #002a80;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff9900cc', endColorstr='#ffd609d6', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  color: #ffffff;
+  background-color: #d609d6;
+  *background-color: #003bb3;
+}
+
+
+
+
+
+#splash-logo{
+max-width:60%;
+max-height:60%;
+}
+
+
+.top {
+height:25%;
+position:relative;
+}
+
+
+.top img{
+height:80%;
+}
+
+.pin-img {
+position:absolute;
+top:0;
+bottom:0;
+left:0;
+right:0;
+margin:auto;
+}
+
+.middle {
+height:40%;
+display:table;
+width:100%;
+}
+
+.middle .well {
+background-color: rgba(255, 255, 255, 0.6);
+}
+
+.middle .row-fluid {
+display:table-cell;
+vertical-align:middle;
+height:100%;
+padding-left:5%;
+padding-right:5%;
+}
+
+
+.bottom{ 
+height:12%;
+margin:0px;
+padding:0px;
+margin-top:1%;
+padding-top:1%;
+padding-left:1%;
+padding-right:1%;
+background-color: rgba(255, 255, 255, 0.6);
+
+}
+
+.top.container{
+width:auto;
+}
+
+
+.carousel {
+}
+
+
+.carousel .active{
+}
+
+.carousel  img {
+width:50px;
+height:50px;
+margin:auto;
+}
+
+.corousel-control.left{
+background-image:;
+background-position:center;
+background-repeat:;
+}
+
+.corousel-control.righ{
+background-image:;
+background-position:center;
+background-repeat:;
+}
+
+

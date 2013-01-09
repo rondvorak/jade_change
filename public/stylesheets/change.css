@@ -1,0 +1,32 @@
+#change {
+
+}
+
+
+#change .top {
+text-align:center;
+}
+
+#change .top {
+height:23%!important;
+}
+
+#change .middle{
+height:58%;
+}
+
+
+#change .top h1{
+margin-top:40px;
+margin-bottom:40px;
+font-size:2em;
+}
+
+/*
+#change canvas {
+  background-color:red;
+}
+#change .middle {
+  background-color:blue;
+}
+*/

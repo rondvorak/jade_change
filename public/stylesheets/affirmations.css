@@ -1,0 +1,69 @@
+#affirmations .bottom .pull-right {
+margin-left:10px;
+}
+
+#affirmations .middle {
+height:40%!important;
+}
+
+#affirmations .bottom{
+height:19%!important;
+margin-bottom:2%;
+padding:0px;
+/*
+overflow:hidden;
+overflow:scroll;
+
+*/
+}
+
+#affirmations a{
+}
+
+
+#affirmations .spo {
+width:0px;
+position:absolute;
+display:inline;
+}
+
+#affirmations .clones {
+width:0px;
+position:absolute;
+display:inline;
+}
+
+.affirmation_category{
+position:relative;
+overflow:hidden;
+}
+
+.affirmation_category .wrapper{
+width:0px;
+}
+
+
+#affirmations .middle .well {
+position:relative;
+overflow:hidden;
+}
+
+#affirmations .middle .well h1{
+position:relative;
+top:-30px;
+}
+
+#affirmations .middle .well p{
+top: -30px;
+position:relative;
+}
+
+
+.affirmation_category img{
+}
+
+.affirmation_category a{
+  display:inline-block;
+  margin-right:20px;
+  margin-top:10px;
+}

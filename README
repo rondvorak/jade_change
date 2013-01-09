@@ -1,0 +1,37 @@
+http://nodejs.org/
+
+From project root:
+npm install express
+npm install eyes
+npm install async
+npm install jade
+
+node ./app.js 
+
+project is in public folder 
+
+// posible gotch yas
+change ip address ./app.js 
+make sure reload variable is set to false 
+
+
+Notes:
+
+index.jade is the main html file
+A page consists of a
+  jade file
+  a javascript file
+  a css file
+By convention these files are named the same for a page
+example:
+  change.js
+  chage.jade
+  change.css
+
+There is no automatic loading of anything to add a new page
+you must add all the parts to the index.jade file manually.
+
+See files
+  public/index.jade [ line 80, 114, 123 ]
+  public/pages/change.jade
+For an example of how to extend the application with a new page.

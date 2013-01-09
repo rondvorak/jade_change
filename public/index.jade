@@ -1,0 +1,126 @@
+include pages/positive.jade
+include pages/change.jade
+include pages/affirmations.jade
+include pages/vision.jade
+//include pages/board.jade
+!!!
+html
+  head
+    meta(name="viewport" , content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+    //meta(name="viewport" , content="width=device-width, initial-scale=1.0)
+    meta(name="apple-mobile-web-app-capable"  , content="yes")
+
+
+    -if ( DATA.PLATFORM=='ios' || DATA.PLATFORM=='ipad')
+      script(src='javascripts/libs/phonegap/phonegap.js')
+      script(src='javascripts/libs/phonegap/LocalNotification.js')
+      script(src='javascripts/libs/phonegap/Badge.js')
+      script(src='javascripts/libs/phonegap/init.js')
+      script(src='javascripts/libs/phonegap/echo.js')
+      script
+        Stub = false
+    -else
+      script
+        Stub = true
+
+    -if ( DATA.RELOAD )
+      script(src='http://'+DATA.ADDRESS+':9000/socket.io/socket.io.js')
+
+
+    //script( src='http://10.0.1.3:8081/target/target-script-min.js#anonymous')
+    script(src='javascripts/libs/lawnchair/src/lawnchair.js')
+    script(src='javascripts/libs/lawnchair/src/adapters/webkit-sqlite.js')
+    //script(src='javascripts/libs/lawnchair/src/adapters/webkit-sqlite.js')
+
+
+    script(src='javascripts/database.js')
+    script(src='javascripts/libs/jquery.js')
+    script(src='javascripts/libs/lazydata.js')
+    script(src='javascripts/libs/emitter.js')
+
+    script(src='javascripts/libs/timePicker/jquery.ptTimeSelect.js')
+    link(rel='stylesheet', href='javascripts/libs/timePicker/jquery.ptTimeSelect.css')
+
+    script(src='javascripts/libs/jquery-ui-1.9.1.custom/js/jquery-ui-1.9.1.custom.js')
+    link(rel='stylesheet',href='javascripts/libs/jquery-ui-1.9.1.custom/css/jquery-ui.css')
+
+    script(src='javascripts/libs/underscore.js')
+    //script(src='javascripts/libs/jquery.animate-enhanced.js')
+
+    // sometimes these libs hate each other
+    script(src='javascripts/libs/jquery.ui.touch-punch.js')
+    script(src='javascripts/libs/hammer.js')
+    script(src='javascripts/libs/jquery.hammer.js')
+
+    script(src='javascripts/libs/smoke/smoke.js')
+    link(rel='stylesheet', href='javascripts/libs/smoke/smoke.css')
+    link(rel='stylesheet', href='javascripts/libs/smoke/themes/default.css')
+
+    script(src='javascripts/libs/parallax.js')
+    script(src='javascripts/libs/parallax-extended.js')
+
+    //script(src='javascripts/libs/raphael.js')
+    //script(src='javascripts/libs/animations/demo.js')
+    
+    link(rel='stylesheet', href='javascripts/bootstrap/css/bootstrap.css')
+    link(rel='stylesheet', href='javascripts/bootstrap/css/bootstrap-responsive.css')
+    script(src='javascripts/bootstrap/js/bootstrap.js')
+
+    link(rel='stylesheet', href='stylesheets/typography.css')
+    link(rel='stylesheet', href='stylesheets/masterLayout.css')
+
+
+    link(rel='stylesheet', href='stylesheets/main.css')
+    script(src='javascripts/app.js')
+
+    script(src='documents/affirmations.json.js')
+    script(src='javascripts/affirmations.js')
+    link(rel='stylesheet', href='stylesheets/affirmations.css')
+
+    script(src='javascripts/change.js')
+    link(rel='stylesheet', href='stylesheets/change.css')
+
+
+    script(src='documents/positive.json.js')
+    script(src='javascripts/positive.js')
+    link(rel='stylesheet', href='stylesheets/positive.css')
+
+    script(src='javascripts/vision.js')
+    link(rel='stylesheet', href='stylesheets/vision.css')
+
+    //script(src='javascripts/board.js')
+    //link(rel='stylesheet', href='stylesheets/board.css')
+
+
+
+
+  body
+    div#DEBUG
+    ul#DATA
+      -for (var key in DATA )
+        li(id="#{key}")=DATA[key]
+    #splash.page
+      .well.page-wrapper
+        img#splash-logo.pin-img(src='./images/logo.gif')
+
+    #main.page
+      .well.page-wrapper
+        .top.container
+          img.pin-img(src='./images/logo.gif')
+          //.well.span4.offset4
+        .middle
+          .row-fluid.well
+            button.btn-block.btn-primary.btn.large(data-parallax='top' , data-target='positive') Positive Quote of the Day
+            button.btn-block.btn-primary.btn.large(data-parallax='left' , data-target='change')  Flames of Change
+            button.btn-block.btn-primary.btn.large(data-parallax='right' , data-target='affirmations') Affirmation Wizard
+            //button.btn-block.btn-primary.btn.large(data-parallax='bottom' , data-target='vision') Vision Board Creator
+        .bottom.well
+          blockquote.pull-right
+            p Imagination is more important than knowledge.
+            small Albert Einstein
+     
+    mixin positive('bottom')
+    mixin change('right')
+    mixin affirmations('left')
+    mixin vision('top')
+    //mixin board('top')

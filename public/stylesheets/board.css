@@ -1,0 +1,60 @@
+/*
+these are the defaults
+.top {
+height:31%;
+position:relative;
+}
+
+.top img{
+height:80%;
+}
+
+.pin-img {
+position:absolute;
+top:0;
+bottom:0;
+left:0;
+right:0;
+margin:auto;
+}
+
+.middle {
+height:50%;
+display:table;
+width:100%;
+}
+
+.middle .well {
+background-color: rgba(255, 255, 255, 0.6);
+}
+
+.middle .row-fluid {
+display:table-cell;
+vertical-align:middle;
+height:100%;
+padding-left:5%;
+padding-right:5%;
+}
+
+
+.bottom{ 
+height:12%;
+margin:0px;
+padding:0px;
+margin-top:1%;
+padding-top:1%;
+padding-left:1%;
+padding-right:1%;
+background-color: rgba(255, 255, 255, 0.6);
+}
+*/
+
+/* gfn! */
+#board {}
+#board .top {}
+#board .top img{}
+#board .pin-img {}
+#board .middle {}
+#board .middle .well {}
+#board .middle .row-fluid {}
+#board .bottom{}

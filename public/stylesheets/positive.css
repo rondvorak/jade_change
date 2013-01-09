@@ -1,0 +1,90 @@
+#positive .top {
+height:0px!important;
+}
+
+
+
+#positive h1 {
+font-size:2.0em;
+}
+
+
+.dialog.smoke.pos {
+font-weight:normal;
+}
+
+.dialog.smoke.pos .dialog-buttons{
+display:none;
+}
+
+.dialog.smoke.pos h1 {
+font-size:1.2em;
+}
+
+.dialog.smoke.pos p {
+font-size:.8em;
+}
+
+
+
+
+
+#positive .middle {
+  margin-top:2%;
+  margin-bottom:0%;
+  height:94%
+}
+
+#positive .bottom {
+  display:none;
+}
+
+#ptTimeSelectCloseCntr {
+display:none!important;
+}
+
+#ptTimeSelectSetButton{
+display:none!important;
+}
+
+#positive ul {
+list-style:none;
+padding:0px;
+margin:0px;
+display:block;
+margin:auto;
+width:230px;
+margin-top:30px;
+}
+
+#positive ul label span{
+margin-left:30px;
+}
+
+
+#positive .middle .well btn {
+  width:200px;
+  margin:auto;
+  margin-top:30px;
+  display:block;
+}
+
+
+#positive h1 {
+text-align:center;
+}
+
+
+#positive legend {
+text-align:center;
+}
+
+#positive input{
+display:block;
+margin:auto;
+text-align:center;
+}
+
+~                                                              
+~                                                              
+~               

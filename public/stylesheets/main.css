@@ -1,0 +1,151 @@
+#DATA{
+display:none;
+}
+
+* {
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    
+    -webkit-user-drag: none;
+    -webkit-user-modify: none;
+    -webkit-highlight: none;
+
+    -webkit-touch-callout:  none;
+    -webkit-user-select:    none;
+    -khtml-user-select:     none;
+    -moz-user-select:       none;
+    -ms-user-select:        none;
+    -o-user-select:         none;
+    user-select:            none;
+}
+
+/*
+<!--[if !IE]>-->
+<link type="text/css" rel="stylesheet" media="only screen and (max-device-width: 480px)" href="http://example.com/iPhone.css" />
+<link type="text/css" rel="stylesheet" media="only screen and (min-device-width: 768px) and (max-device-width: 1024px)" href="http://example.com/iPad.css" />
+<!--<![endif]-->
+*/
+
+@font-face { font-family: rgb; src: url('/stylesheets/rgb.otf'); } 
+
+/* iPad [portrait + landscape] */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+
+}
+
+
+/* iPhone [portrait + landscape] */
+@media only screen and (max-device-width: 480px) {
+  #change .top h1{
+    font-size:1.3em !important;
+    margin:0 !important;
+  }
+
+}
+
+
+/* portrait */
+@media screen and (orientation:portrait) {
+  /* portrait-specific styles */
+    
+  .top {
+  height:33% !important;
+  }
+
+}
+/* landscape */
+@media screen and (orientation:landscape) {
+  /* landscape-specific styles */
+}
+
+
+#DEBUG {
+position:absolute;
+top:0px;
+left:0px;
+z-index:2000;
+
+background-color:rgba(64,64,64,30);
+margin:20px;
+padding:5px;
+font-size:14px;
+font-family:rgb;
+display:none;
+opacity:0;
+border-radius:4px;
+overflow:none;
+height:0px;
+width:0px;
+}
+
+#DEBUG:first-child {
+background-color:red;
+
+}
+
+
+*{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; /* Disable selection/Copy of UIWebView */   
+    overflow:none;
+}
+
+input {
+    -webkit-user-select: auto !important;
+}
+
+
+textarea {
+    -webkit-user-select: auto !important;
+}
+
+
+
+html {
+background-image:url('../images/stars.png');
+background-color:#f7c6ed;
+overflow:hidden;
+}
+
+
+#main .top {
+height:15%;
+}
+
+#main .middle{
+height:20%;
+}
+
+#main .bottom{
+height:27%;
+}
+
+#main button{
+width:100%;
+}
+
+
+#two{
+}
+
+#two .top{
+
+}
+
+#two .tap{
+}
+
+
+
+#main .bottom {
+overflow:hidden;
+}
+
+
+#main .bottom p {
+font-size:.7em;
+letter-spacing:.06em;
+padding-right:4px;
+padding-top:10px;
+}
+
